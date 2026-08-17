@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aashiyana Buildcon — Vithai Park, premium 3 BHK luxury row houses at Bhausingpura, Chhatrapati Sambhajinagar.">
+<title>Aashiyana Buildcon | Vithai Park</title>
+<style>
+:root{
+  --ink:#171613; --muted:#6f6a60; --gold:#b99a63; --cream:#f5f0e7;
+  --paper:#fbfaf7; --line:#ded6c8; --dark:#171717;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(20,20,18,.86);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:Georgia,serif;font-size:22px;letter-spacing:.4px}.logo small{display:block;font:10px Arial;letter-spacing:2px;color:#d8c39a}
+nav{display:flex;gap:24px;font-size:14px}nav a{opacity:.9}nav a:hover{color:#e4ca98}
+.menu{display:none}
+.hero{min-height:92vh;padding-top:76px;display:grid;place-items:end center;position:relative;overflow:hidden;background:#1b1b19}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.18) 65%,rgba(0,0,0,.42))}
+.hero-content{position:relative;z-index:2;color:#fff;width:min(1160px,92%);padding:110px 0 95px}
+.kicker{color:#e3c68f;letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:700}
+h1{font:clamp(48px,8vw,92px)/.95 Georgia,serif;margin:18px 0 18px;max-width:760px}
+.hero p{font-size:19px;max-width:620px;color:#eee;margin:0 0 30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:2px;background:var(--gold);color:#15130f;font-weight:700;margin-right:10px}
+.btn.outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
+section{padding:90px 0}.section-head{max-width:700px;margin-bottom:42px}
+.eyebrow{color:#9b7b45;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}
+h2{font:clamp(34px,5vw,54px)/1.05 Georgia,serif;margin:10px 0 14px}
+.lead{color:var(--muted);font-size:17px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.card{background:#fff;border:1px solid var(--line);padding:28px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
+.stat{padding:20px;background:var(--cream);border-left:2px solid var(--gold)}.stat b{display:block;font:28px Georgia,serif}.stat span{font-size:12px;color:var(--muted)}
+.project{background:#eee8dc}.project-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:start}
+.project-image{background:#222;overflow:hidden}.project-image img{width:100%;display:block}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.feature{background:#fff;border:1px solid var(--line);padding:18px}.feature b{display:block;font-size:14px;margin-bottom:4px}.feature span{font-size:12px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:2fr 1fr;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover;display:block}.gallery .big{grid-row:span 2;min-height:520px}.gallery .small{min-height:250px}
+.location{background:var(--dark);color:#fff}.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.address{font-size:20px}.mapbox{min-height:300px;border:1px solid #514b40;background:linear-gradient(135deg,#292824,#191917);display:grid;place-items:center;color:#d8c39a;text-align:center;padding:30px}
+.contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{background:#fff;border:1px solid var(--line);padding:30px}.contact-card h3{margin:0 0 8px;font:27px Georgia,serif}.contact-card p{color:var(--muted);margin:0 0 20px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.call{background:#171613;color:#fff;padding:11px 16px}.wa{background:#8f784e;color:#fff;padding:11px 16px}
+footer{padding:30px 0;background:#111;color:#aaa;font-size:12px}footer strong{color:#fff}
+@media(max-width:760px){
+ nav{display:none}.menu{display:block}.nav{height:66px}.hero{padding-top:66px;min-height:86vh}.hero-content{padding:80px 0}.hero p{font-size:16px}
+ .about,.project-grid,.location-grid,.contact-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}.gallery .big{grid-row:auto;min-height:0}.gallery .small{min-height:0}
+ section{padding:68px 0}.features{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="logo" href="#home">AASHIYANA BUILDCON<small>BUILDING DREAMS</small></a>
+  <nav><a href="#about">About</a><a href="#project">Vithai Park</a><a href="#gallery">Gallery</a><a href="#location">Location</a><a href="#contact">Contact</a></nav>
+  <div class="menu">☰</div>
+</div></header>
+
+<main id="home">
+<section class="hero">
+  <img src="assets/brochure-page-1.jpg" alt="Vithai Park 3 BHK row houses">
+  <div class="hero-content">
+    <div class="kicker">Aashiyana Buildcon presents</div>
+    <h1>Vithai Park</h1>
+    <p>Premium 3 BHK luxury row houses at Bhausingpura, Chhatrapati Sambhajinagar — designed for modern family living.</p>
+    <a class="btn" href="#contact">Book a Site Visit</a>
+    <a class="btn outline" href="#project">Explore Project</a>
+  </div>
+</section>
+
+<section id="about"><div class="container about">
+  <div class="section-head"><div class="eyebrow">The Builder</div><h2>Aashiyana Buildcon</h2>
+    <p class="lead">Creating thoughtfully planned homes with a focus on contemporary design, comfort and a secure community environment.</p>
+    <div class="stats"><div class="stat"><b>3 BHK</b><span>Luxury Row Houses</span></div><div class="stat"><b>Gated</b><span>Community Living</span></div><div class="stat"><b>Prime</b><span>Bhausingpura Location</span></div></div>
+  </div>
+  <div class="card"><div class="eyebrow">Project Address</div><h3>Vithai Park</h3><p>Gut No. 25/1, Beside Shriram Residency, Bhausingpura, Chhatrapati Sambhajinagar.</p><p><strong>Project type:</strong> 3 BHK Luxury Row Houses</p></div>
+</div></section>
+
+<section id="project" class="project"><div class="container">
+  <div class="section-head"><div class="eyebrow">Featured Project</div><h2>Designed for everyday luxury.</h2><p class="lead">A contemporary row-house community with practical planning, security and lifestyle-focused amenities.</p></div>
+  <div class="project-grid">
+    <div class="project-image"><img src="assets/brochure-page-2.jpg" alt="Vithai Park layout and specifications"></div>
+    <div class="features">
+      <div class="feature"><b>R.C.C. Frame Structure</b><span>Robust structural system.</span></div>
+      <div class="feature"><b>Secure Gated Community</b><span>Community-focused entry and security.</span></div>
+      <div class="feature"><b>CCTV Security</b><span>Security camera provision.</span></div>
+      <div class="feature"><b>Wide Internal Roads</b><span>Internal roads with drainage and water lines.</span></div>
+      <div class="feature"><b>Individual Car Parking</b><span>Dedicated parking for each home.</span></div>
+      <div class="feature"><b>Landscaped Garden</b><span>Individual terrace garden and landscaped garden/children's play area.</span></div>
+      <div class="feature"><b>Modern Windows</b><span>Powder-coated aluminium windows with mosquito net & safety M.S. grills.</span></div>
+      <div class="feature"><b>Solar Street Lighting</b><span>Solar street lighting within the society.</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="container">
+  <div class="section-head"><div class="eyebrow">Project Gallery</div><h2>See Vithai Park.</h2><p class="lead">Visuals and project information from the official project brochure.</p></div>
+  <div class="gallery">
+    <div class="big"><img src="assets/brochure-page-1.jpg" alt="Vithai Park brochure front"></div>
+    <div class="small"><img src="assets/brochure-page-2.jpg" alt="Vithai Park plan and amenities"></div>
+    <div class="small"><img src="assets/brochure-page-1.jpg" alt="Vithai Park elevation"></div>
+  </div>
+</div></section>
+
+<section id="location" class="location"><div class="container location-grid">
+  <div><div class="eyebrow">Location</div><h2>Find your Aashiyana.</h2><p class="address">Gut No. 25/1, Beside Shriram Residency,<br>Bhausingpura, Chhatrapati Sambhajinagar.</p><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Vithai%20Park%20Bhausingpura%20Chhatrapati%20Sambhajinagar">Open in Google Maps</a></div>
+  <div class="mapbox"><div><div style="font-size:42px">⌖</div><strong>Vithai Park</strong><br>Bhausingpura, Chhatrapati Sambhajinagar</div></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="container">
+  <div class="section-head"><div class="eyebrow">Contact</div><h2>Book a site visit.</h2><p class="lead">Connect directly with our two project contacts.</p></div>
+  <div class="contact-grid">
+    <div class="contact-card"><h3>Shakib Qureshi</h3><p>Vithai Park — Booking Enquiries</p><div class="contact-actions"><a class="call" href="tel:+919096669744">Call 9096669744</a><a class="wa" target="_blank" href="https://wa.me/919096669744?text=Hello%20Aashiyana%20Buildcon%2C%20I%20am%20interested%20in%20Vithai%20Park.">WhatsApp</a></div></div>
+    <div class="contact-card"><h3>Faizan Qureshi</h3><p>Vithai Park — Booking Enquiries</p><div class="contact-actions"><a class="call" href="tel:+919096669220">Call 9096669220</a><a class="wa" target="_blank" href="https://wa.me/919096669220?text=Hello%20Aashiyana%20Buildcon%2C%20I%20am%20interested%20in%20Vithai%20Park.">WhatsApp</a></div></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="container">© 2026 <strong>Aashiyana Buildcon</strong> · Vithai Park · Chhatrapati Sambhajinagar</div></footer>
+</body></html>
